@@ -1,10 +1,13 @@
 {
   "name": "SecuriBot",
+  "description": "A discord bot"
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/securibot-web/SecuriBot.git",
   "author": "Joseph <joseph300905@gmail.com>",
-  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "discord.js": "^11.5.1"
   }
