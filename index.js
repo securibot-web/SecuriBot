@@ -4,7 +4,7 @@ const commands = require('./commands');
 const bot = new Discord.Client({DisableEveryone: true});
 
 bot.on('ready', async () => {
-  bot.user.setActivity('Protecting **4532** guilds')
+  bot.user.setActivity('Protecting 5564 guilds')
   bot.on("message", async message => {
     if (
       message.author.bot
