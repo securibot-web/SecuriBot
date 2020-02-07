@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
       description: `AVERTISSEMENT :warning: Le membre **${user}** représente une menace pour le serveur:`,
       color: 0xfcd303,
       fields: [{
-        name: 'MalwareInfo:',
+        name: '\'MalwareInfo\' logs from \'SecuriBot\':',
         value: `\`\`\`\nbot[discord.js]: run malware_detector.js...`
         + `\nbot[discord.js]: malware_detector.js successfuly executed!`
         + `\nbot[malware_detector]: searching for malwares in ${message.guild.name}...`
