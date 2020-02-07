@@ -11,9 +11,10 @@ module.exports.run = async (bot, message, args) => {
         name: 'MalwareInfo:',
         value: `\`\`\`\nbot[discord.js]: run malware_detector.js...`
         + `\nbot[discord.js]: malware_detector.js successfuly executed!`
-        + `\nbot[discord.js:malware_detector]: searching for malwares in ${message.guild.name}...`
-        + `\nbot[discord.js:malware_detector]: found malware at '${message.guild.name}/${user.user.tag}'.`
-        + `\nbot[discord.js:malware_detector]: task done.\n\`\`\``
+        + `\nbot[malware_detector]: searching for malwares in ${message.guild.name}...`
+        + `\nbot[malware_detector]: found malware at '${message.guild.name}/${user.user.tag}'.`
+        + `\nbot[malware_detector]: task done.`
+        + `\nbot[discord.js]: This user is a threat to your discord server server ${message.guild.name}.\n\`\`\``
       }]
     }
   });
