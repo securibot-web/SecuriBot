@@ -6,4 +6,4 @@ bot.on('ready', async () => {
   bot.user.setGame('Je sais pas trop')
 });
 
-bot.login(token);
+bot.login(config.token);
