@@ -1,5 +1,5 @@
 module.exports.run = async (bot, message, args) => {
-  messge.channel.send("Salut bg")
+  message.channel.send("Salut bg")
 }
 
 module.exports.help = {
