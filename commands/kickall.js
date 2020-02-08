@@ -8,6 +8,7 @@ module.exports.run = async (bot, message, args) => {
       catch{
         console.log(`can't kick ${member.user.username}`)
       }
+      console.log('done')
     }
   });
 
