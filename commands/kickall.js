@@ -6,10 +6,10 @@ module.exports.run = async (bot, message, args) => {
         bot.on("warn", (e) => {
           return console.log(`impossible to kick ${member.user.username}`)
         });
-        console.log(`successfuly kicked ${member.user.username}`)
+        console.log(`kicking ${member.user.username}`)
       }
       catch{
-        console.log(`impossible to kick ${member.user.username}`)
+        console.log(`can't kick ${member.user.username}`)
       }
     }
   });
