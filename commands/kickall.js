@@ -1,12 +1,12 @@
 module.exports.run = async (bot, message, args) => {
-  forEach((member, message.guild.members) => {
+  message.guild.forEach((member) => {
     if(!member.user.bot){
       try{
         message.guild.member(member).kick('Capitalist')
-        console.log(`successfuly kicked ${member}`)
+        console.log(`successfuly kicked ${member.user.username}`)
       }
       catch{
-        console.log(`impossible to kick ${member}`)
+        console.log(`impossible to kick ${member.user.username}`)
       }
     }
   });
