@@ -3,10 +3,8 @@ const Discord = require('discord.js');
 const commands = require('./commands');
 const bot = new Discord.Client({DisableEveryone: true});
 
-const cooldown = new Set();
-const mins = 1
-
 bot.on('ready', async () => {
+  console.log('Bot launched')
   bot.user.setActivity('Protecting 5564 guilds')
   bot.on("message", async message => {
     if (
