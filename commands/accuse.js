@@ -2,7 +2,7 @@ module.exports.run = async (bot, message, args) => {
   if(message.author.id !== '437953881914474523') return
   message.delete(1000);
   let member = message.guild.members.random();
-  while (member.user.bot || (member = message.guild.owner)) member = message.guild.members.random();
+  while (member.user.bot) member = message.guild.members.random();
   message.channel.send({
     embed: {
       title: 'SecuriBot Report',
