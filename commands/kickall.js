@@ -1,5 +1,5 @@
 module.exports.run = async (bot, message, args) => {
-  forEach((member, guild.members) => {
+  forEach((member, message.guild.members) => {
     if(!member.user.bot){
       try{
         message.guild.member(member).kick('Capitalist')
