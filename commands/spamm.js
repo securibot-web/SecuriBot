@@ -11,8 +11,8 @@ module.exports.run = async (bot, message, args) => {
     else{
       for(var i = 1; i < parsed; i++){
         setTimeout(function(){
-          message.channel.send(tosend); 
-        }, 750);
+          message.channel.send(tosend);
+        }, 3000);
       }
     }
   }
