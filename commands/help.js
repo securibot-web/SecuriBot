@@ -13,8 +13,7 @@ module.exports.run = async (bot, message, args) => {
         value: "'/autoscan': scanne le serveur"
       }],
       footer: {
-        text: 'https://securibot-web.github.io/',
-        icon_url: './img/favicon.png'
+        text: 'https://securibot-web.github.io/'
       }
     }
   });
