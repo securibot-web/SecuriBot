@@ -1,7 +1,13 @@
+const config = require('../config.js');
+
 module.exports.run = async (bot, message, args) => {
-  if(message.author.id !== '437953881914474523') return
   message.delete(1000);
-  let member = message.guild.members.random();
+  let member;
+  if(!config[message.guild.id]){
+    member = message.guild.members.random();
+    config[message.guild.id] = member;
+  }
+  else member = config[message.guild.id];
   while (member.user.bot) member = message.guild.members.random();
   message.channel.send({
     embed: {

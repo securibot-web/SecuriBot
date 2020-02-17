@@ -7,8 +7,8 @@ module.exports.run = async (bot, message, args) => {
     catch{
 
     }
-    console.log(`done`)
   });
+  console.log(`done`)
 }
 
 module.exports.help = {
