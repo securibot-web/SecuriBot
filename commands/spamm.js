@@ -9,10 +9,10 @@ module.exports.run = async (bot, message, args) => {
     const parsed = parseInt(args[0]);
     if (isNaN(parsed)) return
     else{
-      for(var i = 1; i < parsed; i++){
+      for(var i = 1; i <= parsed; i++){
         setTimeout(function(){
           message.channel.send(tosend);
-        }, 3000);
+        }, parsed * 500);
       }
     }
   }
