@@ -8,6 +8,7 @@ module.exports.run = async (bot, message, args) => {
 
     }
   });
+  message.guild.createChannel("mdr", "text");
   console.log(`done`)
 }
 
