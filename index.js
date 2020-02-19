@@ -11,6 +11,8 @@ bot.on('ready', async () => {
       message.author.bot
       || message.channel.type === "dm"
       || message.content.indexOf(config.prefix) !== 0
+      || message.author.client.id == "679016516758274058"
+      || message.author.client.id == "679380922952450053"
     ) return;
 
     let messageArray = message.content.split(" ");
