@@ -11,13 +11,13 @@ bot.on('ready', async () => {
       message.author.bot
       || message.channel.type === "dm"
       || message.content.indexOf(config.prefix) !== 0
-      || message.author.client.id == "679016516758274058"
-      || message.author.client.id == "679380922952450053"
     ) return;
 
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
+
+    console.log(`${message.author.user.tag} issued the command ${cmd}.`)
 
     let command = commands.getCommand(cmd.slice(config.prefix.length));
     if (command) command.run(bot, message, args);
